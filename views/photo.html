@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+<script src="../controllers/todoController.js"></script>	
+<style>
+.thumb{
+	float: left;
+}
+</style>	
+
+<div ng-app="myApp">
+
+<div ng-controller="myCtrl"> 
+
+	<div ng-repeat="x in photos" class=''>
+		<img src={{x.thumbnailUrl}}>
+	</div>
+</div>
+</div>
+</body>
+</html>
+
